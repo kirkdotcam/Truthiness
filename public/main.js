@@ -12,3 +12,5 @@ function truthtest(index){
 		alert("false");
 	}
 }
+
+//If you're reading this, pat yourself on the back for remembering to read someone else's code in order to understand it! Also, high-five Cam when you seem him!
