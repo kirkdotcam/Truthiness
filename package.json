@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CamKirk/Truthiness/issues"
   },
-  "homepage": "https://github.com/CamKirk/Truthiness#readme"
+  "homepage": "https://github.com/CamKirk/Truthiness#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
