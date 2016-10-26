@@ -1,7 +1,7 @@
-var express=require("express");
-var app=express();
+var express = require('express');
+var path = require('path');
+var app = express();
 
 
-app.get('/',function(req,res){
-    express.static(__dirname+'/index.html')
-    }).listen(process.env.PORT);
+app.use(express.static(path.join(__dirname, 'public'))).listen(app.get(process.env.PORT));
+

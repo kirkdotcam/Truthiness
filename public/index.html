@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Yo but if you're reading this, check the indentation. It's important that code is readable to other people.-->
+
+	<!--The loading of the JQuerelousness. Why does this go first?-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- The strapping of the boots -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--Custom Styles and JS. Ask yourself, why does this come after I put on my boots? -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="main.js"></script>
+
+	<!-- A silly title. You know, to make it fun n' stuff. -->
+	<title>YOU CANT HANDLE THE TRUTH</title>
+</head>
+
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<img class="center-block" src="https://upload.wikimedia.org/wikipedia/en/8/85/Truthiness.png"/>
+			<p class="text-center">
+				Before you click each of these, ask yourself WHAT the answer should be and WHY you think so.
+			</p>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 class="text-center">The Good</h3>
+				<!--truthtest() is a custom function, please don't try to use it later.-->
+				<button class="btn btn-default" onclick="truthtest(0);">True</button>
+				<button class="btn btn-default" onclick="truthtest(1);">4</button>
+				<button class="btn btn-default" onclick="truthtest(2);">"false"</button>
+				<button class="btn btn-default" onclick="truthtest(3);">'4'</button>
+				<button class="btn btn-default" onclick="truthtest(4);">'4'+4=='44'</button>
+				<button class="btn btn-default" onclick="truthtest(5);">'I kind of like four'</button>
+				<button class="btn btn-default" onclick="truthtest(6);">'14'+4===18</button>
+				<button class="btn btn-default" onclick="truthtest(7);"> 0</button>
+				<button class="btn btn-default" onclick="truthtest(8);"> 1</button>
+				<button class="btn btn-default" onclick="truthtest(9);">!false</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 class="text-center">The Bad</h3>
+				<button class="btn btn-warning" onclick="truthtest(10);">[]</button>
+				<button class="btn btn-warning" onclick="truthtest(11);">['Kirk','Better than', 'Picard']</button>
+				<button class="btn btn-warning" onclick="truthtest(12);">'Houston'>'Dallas'</button>
+				<button class="btn btn-warning" onclick="truthtest(13);">true||false</button>
+				<button class="btn btn-warning" onclick="truthtest(14);"> []+4</button>
+				<button class="btn btn-warning" onclick="truthtest(15);">[]==false</button>
+				<button class="btn btn-warning" onclick="truthtest(16);">-1</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 class="text-center">The Ugly</h3>
+				<button class="btn btn-danger" onclick="truthtest(17);">true&&false</button>
+				<button class="btn btn-danger" onclick="truthtest(18);">true+false</button>
+				<button class="btn btn-danger" onclick="truthtest(19);">true-false</button>
+				<button class="btn btn-danger" onclick="truthtest(20);">true+2</button>
+				<button class="btn btn-danger" onclick="truthtest(21);">true + "2"</button>
+				<button class="btn btn-danger" onclick="truthtest(22);">null</button>
+				<button class="btn btn-danger" onclick="truthtest(23);">undefined</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h3 class="text-center">The HOW EVEN LOGIC!?</h3>
+				<button class="btn btn-success" onclick="truthtest(24);">1/0</button>
+				<button class="btn btn-success" onclick="truthtest(25);">-0</button>
+			</div>
+		</div>
+
+</body>
+</html>
