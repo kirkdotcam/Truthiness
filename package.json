@@ -1,0 +1,19 @@
+{
+  "name": "truthiness",
+  "version": "1.0.0",
+  "description": "its da truf",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamKirk/Truthiness.git"
+  },
+  "author": "CamKirk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamKirk/Truthiness/issues"
+  },
+  "homepage": "https://github.com/CamKirk/Truthiness#readme"
+}
