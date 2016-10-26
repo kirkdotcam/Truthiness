@@ -2,6 +2,6 @@ var express=require("express");
 var app=express();
 
 
-app.use(
+app.get('/',function(){
     express.static(__dirname+'index.html')
-    ).listen(process.env.PORT)
+    }).listen(process.env.PORT)
