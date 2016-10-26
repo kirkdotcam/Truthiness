@@ -3,5 +3,5 @@ var path = require('path');
 var app = express();
 
 
-app.use(express.static(path.join(__dirname, 'public'))).listen(app.get(process.env.PORT));
+app.use(express.static(path.join(__dirname, 'public'))).listen(3001||process.env.PORT);
 
